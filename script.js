@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     function timeSetter() {
         const now = new Date(Date.now())
         const options = { hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit" };
-        clock.innerText = now.toLocaleTimeString("de-DE", options)
+        clock.innerText = now.toLocaleTimeString("en-UK", options)
     }
     timeSetter()
     setInterval(timeSetter, 500)
@@ -43,8 +43,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     function dateSetter() {
         const now = new Date(Date.now())
         const options = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
-        date.innerText = now.toLocaleDateString("de-DE", options)
+        date.innerText = now.toLocaleDateString("en-UK", options)
     }
     dateSetter()
     setInterval(dateSetter, 3600_000)
+
+    form.query.focus()
 });
