@@ -86,7 +86,7 @@ form {
 .search-bar-button {
     grid-column: 2;
     grid-row: 1;
-    justify-self: center;
+    align-self: center;
 }
 
 .search-bar-button:active {
