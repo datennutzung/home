@@ -47,6 +47,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     dateSetter()
     setInterval(dateSetter, 3600_000)
-
-    form.query.focus()
 });
