@@ -10,7 +10,7 @@ body {
 
 main {
     display: flex;
-    padding: 2rem;
+    padding: 4rem;
     gap: 5em;
     align-items: center;
     justify-content: center;
